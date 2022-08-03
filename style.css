@@ -11,11 +11,18 @@ body::before {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: -1;
 
 }
 
-header {
+.page {
     width: 736px;
+    margin: 0 auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 74px;
 }
 
 header p {
@@ -33,3 +40,10 @@ h1 {
     color: white;
 }
 
+form {
+    background-color: #FAFAFC;
+    margin-top: 38px;
+    border-radius: 8px;
+
+    min-height: 300px;
+}
