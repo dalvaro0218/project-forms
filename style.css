@@ -58,6 +58,9 @@ form {
 
     min-height: 300px;
     padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
 }
 
 fieldset {
@@ -117,7 +120,9 @@ fieldset legend {
     color: #6c6a71;
 }
 
-.input-wrapper input, .input-wrapper textarea {
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
     background: #FAFAFC;
 
     border: 1px solid #E6E6F0;
@@ -131,4 +136,25 @@ fieldset legend {
     line-height: 26px;
 
     color: #C1BCCC;
+}
+
+.input-wrapper select {
+    appearance: none; /*tira setinha */
+    -moz-appearance: none; /*tira setinha mozzila*/
+    -webkit-appearance: none; /*tira setinha chrome e outros*/
+    -ms-appearance: none; /*tira setinha microsoft*/
+
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%0A%3E%3Cpath d='M6 9.65685L7.41421 11.0711L11.6569 6.82843L15.8995 11.0711L17.3137 9.65685L11.6569 4L6 9.65685Z' fill='currentColor' /%3E%3Cpath d='M6 14.4433L7.41421 13.0291L11.6569 17.2717L15.8995 13.0291L17.3137 14.4433L11.6569 20.1001L6 14.4433Z' fill='currentColor' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 24px top 50%;
+
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+
+.col-3 > div:nth-child(1) {
+    width: 100%;
 }
