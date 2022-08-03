@@ -1,0 +1,35 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #E5E5E5;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 368px;
+    background-color: #121214;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+header {
+    width: 736px;
+}
+
+header p {
+    font-size: 16px;
+    line-height: 26px;
+
+    color: #42D3FF;
+}
+
+h1 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+}
+
